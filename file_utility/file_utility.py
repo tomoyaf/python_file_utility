@@ -49,8 +49,3 @@ def read_child_files_and_dirs_name(root):
 def is_file_extension(file_name, ext):
     return file_name.lower().endswith(ext)
 
-if __name__ == "__main__":
-    files = read_child_files_and_dirs_name("./file_utility")
-    
-    print(files)
-
