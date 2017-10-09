@@ -1,6 +1,9 @@
 import os
 import re
 
+def is_file_extension(file_name, ext):
+    return file_name.lower().endswith(ext)
+
 def remove_current_dir_prefix_from_path(path):
     return path[:2].replace("./", "") + path[2:]
 
@@ -45,7 +48,3 @@ def read_child_dirs_name(root):
 
 def read_child_files_and_dirs_name(root):
     return read_child_dirs_name(root) + read_child_files_name(root)
-
-def is_file_extension(file_name, ext):
-    return file_name.lower().endswith(ext)
-
